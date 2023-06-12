@@ -2,8 +2,6 @@ import os
 from pytube import YouTube
 import time
 
-start_time = time.time()
-
 # Create directories for videos and audios
 videoDir = 'C:/Users/wlsn1/Desktop/Youtube Videos/Videos'
 clipsDir = 'C:/Users/wlsn1/Desktop/Youtube Videos/Clips'
@@ -25,6 +23,8 @@ while (selection != '1' and selection != '2' and selection != '3' and selection 
 url = input("Enter Your Link: ")
 # create a YouTube object2
 yt = YouTube(url)
+
+start_time = time.time()
 
 if selection == '1':
     # get the video and audio stream and download them
